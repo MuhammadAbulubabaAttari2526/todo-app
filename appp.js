@@ -9,8 +9,11 @@ taskButton.addEventListener("click", function(){
     list.appendChild(li)
     taskInput.value = "";
 
+    // ----------btn container-----------
     let container = document.createElement("div")
     container.classList.add("btns")
+
+    // / -------dlt button------------
 
     let dlt = document.createElement("button")
 dlt.innerHTML = `<i class="fa-solid fa-trash"></i>`
@@ -26,6 +29,7 @@ li.addEventListener("click", function(e){
 
 container.appendChild(dlt)
 
+// ------------edit button---------------
 let edit = document.createElement("button")
 edit.innerHTML= `<i class="fa-solid fa-pen-to-square"></i>`
 edit.addEventListener("click", function(){
