@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>todo app</title>
+</head>
+<style>
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1e174b;
+}
+h1{
+    text-align: center;
+}
+.parent{
+    border-radius: 10%;
+    background-color: rgb(216, 206, 252);
+    padding: 5%;
+    box-shadow: 0px 0px 100px rgb(21, 89, 190);
+    /* width: 20rem;
+    height: 10rem; */
+    transition: all 0.4s;
+    border: 2px dotted black;
+}
+/* .parent:hover{
+  width: 20.5rem;
+    height: 10.5rem;
+} */
+input{
+    width: 15rem;
+}
+ul button {
+    background-color: transparent;
+    border: 1px dotted navy;
+    
+}
+ul{
+    margin: 0%  auto;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    border: 1px dotted gray;
+    padding: 10px;
+    margin-top: 10px;
+   margin-left: -2.5rem;
+   width:270px;
+   text-align: start;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+</style>
+
+<body>
+   <div class="parent">
+    <h1>TUDO APP</h1>
+    <div class="child">
+    <input type="text" name="" id="taskinput" placeholder="add new task">
+    <button id="taskbutton" style="    background-color: #6E62C2; border: 5%; color: white; border: 1px solid #6E62C2;">ADD</button>
+    <ul id="tasklist"></ul>
+    </div>
+    </div>
+
+
+    <script src="./appp.js"></script>
+</body>
+</html>
